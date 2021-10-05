@@ -18,6 +18,9 @@ describe('Robot module', () => {
   })
 
   // 2. Test that result[1] is of type object.
+  test('result[1] should be of type object', () => {
+    expect(typeof result[1]).toBe('object')
+  })
 
   describe('Validate report values', () => {
     // Create this variable after checking that type is object.
