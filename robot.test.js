@@ -35,7 +35,10 @@ describe('Robot module', () => {
     })
 
     // 4. Test that report.x is a number between 0 and 5.
-
+    test('report.x is a number between 0 and 5', () => {
+      expect(report.x).toBeGreaterThan(0)
+      expect(report.x).toBeLessThan(5)
+    })
     // 5. Test that report.y is a number between 0 and 5.
 
     // 6. Test that report.facing is one of: NORTH, SOUTH, EAST, or WEST.
